@@ -1,6 +1,6 @@
 name: portal-backend-pen
-domain: dev.demo.catena-x.net
-corsOrigins: http://localhost:3000, https://*.dev.demo.catena-x.net
+domain: dev.demo.ftcpro.co
+corsOrigins: http://localhost:3000, https://*.dev.demo.ftcpro.co
 
 postgresql:
   secret:
@@ -47,7 +47,7 @@ pgadmin4:
   secret:
     path: portal/data/pen/pgadmin4
   env:
-    email: portal@catena-x.net
+    email: portal@ftcpro.co
   existingSecret: secret-pgadmin4
   ingress:
     enabled: true
@@ -55,11 +55,11 @@ pgadmin4:
       cert-manager.io/cluster-issuer: letsencrypt-prod
       kubernetes.io/ingress.class: nginx
     hosts:
-      - host: portal-pgadmin4-pen.dev.demo.catena-x.net
+      - host: portal-pgadmin4-pen.dev.demo.ftcpro.co
         paths:
         - path: /
           pathType: Prefix
     tls:
       - hosts:
-        - portal-pgadmin4-pen.dev.demo.catena-x.net
-        secretName: portal-pgadmin4-pen.dev.demo.catena-x.net-tls
+        - portal-pgadmin4-pen.dev.demo.ftcpro.co
+        secretName: portal-pgadmin4-pen.dev.demo.ftcpro.co-tls
