@@ -6,8 +6,8 @@ portContainer: 80
 portService: 8080
 replicaCount: 1
 
-# postgresql:
-#   enabled: true
+postgresql:
+  enabled: false
 #   auth:
 #     existingSecret: secret-postgres-init
 #   secret:
