@@ -1,10 +1,10 @@
 domain: dev.demo.ftcpro.co
 corsOrigins: http://localhost:3000, https://*.dev.demo.ftcpro.co
 
-postgresql:
-  secret:
-    pathinit: portal/data/dev/postgres
-    pathinitdbuser: portal/data/dev/postgres-db-user
+# postgresql:
+#   secret:
+#     pathinit: portal/data/dev/postgres
+#     pathinitdbuser: portal/data/dev/postgres-db-user
 
 registration:
   image: ghcr.io/catenax-ng/product-portal-backend_registration-service:latest
