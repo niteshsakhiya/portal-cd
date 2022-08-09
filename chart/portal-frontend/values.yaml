@@ -12,7 +12,7 @@ securityContext:
 portal:
   path: "/(.*)"
   name: "portal"
-  image: "ghcr.io/catenax-ng/product-portal-frontend:main"
+  image: "ftcpro.azurecr.io/frontend/product-portal-frontend:latest"
 
 assets:
   path: "/((assets|swagger)/.*)"
@@ -22,7 +22,7 @@ assets:
 registration:
   path: "/registration/(.*)"
   name: "registration"
-  image: "ghcr.io/catenax-ng/product-portal-frontend-registration:main"
+  image: "ftcpro.azurecr.io/frontend/product-portal-frontend-registration:latest"
 
 demonstrator:
   path: "/demonstrator/(.*)"
