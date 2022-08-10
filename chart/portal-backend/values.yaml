@@ -92,7 +92,7 @@ portalmaintenance:
 
 notification:
   name: notification-service
-  image: ghcr.io/catenax-ng/product-portal-backend_notification-service:0.4.5
+  image: ghcr.io/catenax-ng/product-portal-backend_notification-service:v0.4.5
   secret:
     name: secret-notification
     path: portal/data/dev/notification
